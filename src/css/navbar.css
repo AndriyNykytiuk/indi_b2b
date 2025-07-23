@@ -1,0 +1,12 @@
+.button{
+    /* will use for all buttons in project*/
+    display: block;
+    padding: 8px 20px;
+    border-radius: 12px;
+    color:#FFFF;
+    background: #6138ff;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}

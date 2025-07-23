@@ -1,0 +1,107 @@
+.aproach-container{
+   width: 100%;
+ 
+  background-color: rgba(255, 255, 255, 0.7); 
+
+
+}
+
+.item-title{
+    max-width: 170px;
+}
+.item-title h4{
+    font-family: "Inter";
+    font-size: clamp(10px,2vw,24px);
+    font-weight: 600;
+
+}
+.card-item:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.trafic{
+    position: relative;
+}
+.trafic::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  width: 150%;
+  height: 74%;
+  background-image: url('../img/peopleToindiTop.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* або cover */ 
+}
+
+.dificult{
+    position: relative;
+}
+.dificult::after{
+      content: '';
+  position: absolute;
+  top: -24%;
+  left: 105%;
+
+width: clamp(200px, 50vw, 400px);
+
+  height: 74%;
+  background-image: url('../img/giftToindiBottom.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* або cover */ 
+}
+
+.client{
+    position: relative;
+}
+
+.client::after{
+          content: '';
+  position: absolute;
+  top: 25%;
+  left:-75%;
+  width: 150%;
+  height: 120%;
+  background-image: url('../img/clientToIndi.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* або cover */ 
+}
+
+.prize{
+    position: relative;
+}
+.prize::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left:-75%;
+  width: 69%;
+  height: 120%;
+  background-image: url('../img/prizeToIndi.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* або cover */ 
+}
+
+.analize{
+    position: relative;
+}
+
+.analize::after{
+     content: '';
+  position: absolute;
+  top: -40%;
+  left:-75%;
+  width: 69%;
+  height: 120%;
+  background-image: url('../img/analizeToIndi.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* або cover */ 
+}
+.center-paragraph{
+    font-family: "inter";
+    font-size: clamp(8px,1vw,12px);
+    font-weight: 200;
+    max-width: 426px;
+    width: 100%;
+    color: #919191;
+}

@@ -1,0 +1,36 @@
+.header {
+  background: linear-gradient(180deg, #AF9AFF 9%, #FFFFFF 107%);
+  padding-bottom: 60px;
+  border-radius:0px 0px 50px 50px;
+  -webkit-border-radius:0px 0px 50px 50px;
+  -moz-border-radius:0px 0px 50px 50px;
+  -ms-border-radius:0px 0px 50px 50px;
+  -o-border-radius:0px 0px 50px 50px;
+}
+
+.header-title{
+    padding: 10px 60px;
+    max-width: 845px;
+}
+.header-title h1{
+        font-family: 'Inter';
+        font-size: clamp(24px,5vw,52px);
+        font-weight: 800;
+        width: 100%;
+        text-align: center;
+}
+.header-subtitle{
+    max-width: 845px;
+    padding: 10px 40px;
+    margin-bottom: 16px;
+
+}
+.header-subtitle h2{
+    width: 100%;
+    text-align: center;
+    color: #667085;
+    font-family: "Inter";
+     font-size: clamp(12px,2vw,24px);
+    font-weight:  300;
+
+}

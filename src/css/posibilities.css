@@ -1,0 +1,58 @@
+.posibilitie-title{
+    max-width: 693px;
+    margin-bottom: 10px;
+}
+.posibilitie-title h2{
+    text-align: center;
+width: 100%;
+font-family: "Inter";
+font-weight: 900;
+font-size: clamp(24px,3vw,48px);
+}
+
+.posibilities-subtitle{
+    max-width: 500px;
+    margin-bottom: 90px;
+
+}
+.posibilities-subtitle h4{
+        text-align: center;
+width: 100%;
+font-family: "Inter";
+font-weight: 400;
+font-size: clamp(10px,2vw,18px);
+    color: #667085;
+}
+
+.item-posibiblity{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+max-width: 304px;
+width: 100%;
+}  
+.item-pict{
+    position: relative;
+    border: solid 4px #6138FF;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 42px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.item-num{
+    position: absolute;
+    background-color: #6138FF;
+    padding: 0px 8px;
+    border-radius: 40px;
+    color: #FFFF;
+    top: -0.5rem;
+    left: -1.4rem;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
