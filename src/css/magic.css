@@ -17,7 +17,7 @@ font-weight: 400;
 font-size: clamp(14px,2vw,19px);
 }
 .magic-item{
- max-width: 256px;
+
 }
 .item-step{
     border-bottom: solid 2px #e6e8ec;
@@ -39,5 +39,5 @@ font-size: clamp(14px,2vw,19px);
 
 .item-text p{
     color: #667085;
-    font-weight: 300;
+    font-family: Inter;
 }

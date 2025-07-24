@@ -3,6 +3,9 @@ import Header from './components/Header'
 import Swipercomponent from './components/Swipercomponent'
 import Magic from './components/Magic'
 import Posibilities from './components/Posibilities'
+import HowToStart from './components/HowToStart'
+import Indibusines from './components/Indibussines'
+import InvolveClients from './components/InvolveClients'
 
 const App = () => {
   return (
@@ -12,6 +15,9 @@ const App = () => {
     <Swipercomponent/>
     <Magic/>
     <Posibilities/>
+    <HowToStart/>
+    <Indibusines/>
+    <InvolveClients/>
     </>
   )
 }

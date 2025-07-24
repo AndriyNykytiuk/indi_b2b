@@ -7,7 +7,7 @@ const Magic = () => {
   return (
     <section className='magic'>
 
-        <div className='magic-container mx-auto max-w-[1280px] pt-[80px] pb-[80px]'>
+        <div className='magic-container mx-auto max-w-[1280px] p-[80px] '>
                 <div className='magic-title mb-[10px]'>
                     <h3>
                         Проста магія INDI
@@ -16,7 +16,7 @@ const Magic = () => {
                 <div className='magic-subtitle mb-[95px]'>
                     <h4>INDI робить залучення клієнтів легким і навіть трохи чарівним. Просто створіть пропозицію — ми зробимо решту.</h4>
                 </div>
-                <div className='magic-items grid grid-cols-4 gap-3'>
+                <div className='magic-items grid grid-cols-4 gap-3 '>
                         <motion.div className='magic-item item'
                         variants={firstStep}
                          initial="hidden" 

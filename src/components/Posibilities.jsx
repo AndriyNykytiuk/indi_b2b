@@ -8,21 +8,21 @@ import rocket from '../img/rocket.svg'
 import dollar from '../img/dollar.svg'
 const Posibilities = () => {
   return (
-    <section className='posibilities '>
+    <section className='posibilities  mb-[80px]'>
 
         <div className='posibilities-container mx-auto max-w-[1280px] bg-[#F9FAFB] rounded-[64px] p-[120px]'>
                 <div className='posibilities-wrapp flex flex-col items-center justify-center'>
-                    <div className='posibilitie-title'>
+                    <div className='title'>
                             <h2>
                                 Що дає INDI вашому бізнесу
                             </h2>
                     </div>
-                    <div className='posibilities-subtitle'>
+                    <div className='subtitle'>
                         <h4>
                             Клієнти приходять грати — ви отримуєте продажі. Мінімум зусиль, максимум залучення.
                         </h4>
                     </div>
-                    <div className='posibilities-items item grid grid-cols-3 grid-rows-2 gap-y-8'>
+                    <div className='posibilities-items item grid grid-cols-3 grid-rows-2 gap-y-8 mb-[60px]'>
                             <div className='item-posibiblity'>
                                 <div className='item-pict'>
                                     <div className='item-num'>
@@ -107,6 +107,14 @@ const Posibilities = () => {
                                     </p>
                                 </div>
                             </div>
+                    </div>
+                    <div className='posibilities-button flex gap-8 items-center '>
+                        <div className='button'>
+                            <a href="#">Долучитись до INDI</a>
+                        </div>
+                        <div className='button-link'>
+                            <a href="#">Дізнатись більше</a>
+                        </div>
                     </div>
                 </div>
         </div>

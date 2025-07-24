@@ -1,0 +1,55 @@
+.howtostart-item{
+    max-width: 330px;
+    background-color: #F9FAFB;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+   
+      /* involve on card size*/
+
+    text-align: start;
+    border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+    -ms-border-radius: 64px;
+    -o-border-radius: 64px;
+}
+.card-item-pict{
+   
+}
+.card-text{
+  
+}
+.card-item-text h3{
+max-width: 200px;
+min-width: 185px;
+font-family: "Inter";
+font-weight: 600;
+font-size: clamp(12px,3vw,18px);
+margin-bottom: 25px;
+}
+
+.card-item-text {
+    max-width: 245px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.card-item-button{
+    
+    display: flex;
+}
+.card-item-button a{
+   display: block;
+   border:solid 1px black;
+   border-radius: 12px;
+   padding: 4px 8px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
+}

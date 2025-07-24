@@ -1,0 +1,73 @@
+
+.left-title{
+    max-width: 350px;
+        font-family: "Inter";
+    font-weight: 700;
+    font-size: 48px;
+}
+.left-subtitle{
+        max-width: 425px;
+        font-family: "Inter";
+    font-weight: 300;
+    font-size: 18px;
+     color: #667085;
+     margin-bottom: 50px;
+}
+.left-button a{
+    border: #E6E6E6 solid 2px;
+    border-radius: 14px;
+    padding: 13px 30px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.right-card{
+    max-width: 380px;
+    width: 100%;
+    padding-bottom: 40px;
+
+}
+.right-slider{
+    padding: 50px;
+}
+
+.right-user{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.swiper-pagination {
+   
+  text-align: left !important;
+  width: 100%;
+}
+.swiper-pagination-bullet-active {
+  background-color: #6C6C6C !important;
+  opacity: 1;
+}
+.user-face{
+    max-width: 50px;
+    max-height: 50px;
+
+}
+.user-face img{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.user-name{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+}
+.user-role{
+    font-family: "Inter" ;
+    font-weight: 300;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+.user-review{
+     font-family: "Inter";
+    font-weight: 400;
+    font-size: 22px;
+}

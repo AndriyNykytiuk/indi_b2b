@@ -1,8 +1,8 @@
-.posibilitie-title{
+.title{
     max-width: 693px;
     margin-bottom: 10px;
 }
-.posibilitie-title h2{
+.title h2{
     text-align: center;
 width: 100%;
 font-family: "Inter";
@@ -10,12 +10,12 @@ font-weight: 900;
 font-size: clamp(24px,3vw,48px);
 }
 
-.posibilities-subtitle{
+.subtitle{
     max-width: 500px;
     margin-bottom: 90px;
 
 }
-.posibilities-subtitle h4{
+.subtitle h4{
         text-align: center;
 width: 100%;
 font-family: "Inter";
@@ -43,6 +43,10 @@ width: 100%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.item-pict img{
+    width: 32px;
+    height: 32px;
+}
 .item-num{
     position: absolute;
     background-color: #6138FF;
@@ -55,4 +59,16 @@ width: 100%;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+}
+.button-link{
+    position: relative;
+
+}
+
+.button-link::after{
+    position: absolute;
+       content: '>';
+    width: 5px;
+    height: 5px;
+    right:-10px;
 }
