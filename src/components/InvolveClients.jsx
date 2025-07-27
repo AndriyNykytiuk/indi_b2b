@@ -5,8 +5,8 @@ import mobile from '../img/mobile.png'
 const InvolveClients = () => {
   return (
     <section>
-        <div className='involveclients-container mx-auto max-w-[1280px] p-[100px]'>
-            <div className='involveclients-gridcontainer gridcontainer grid grid-cols-3'>
+        <div className='involveclients-container mx-auto max-w-[1280px] p-[15px] md:p-[100px]'>
+            <div className='involveclients-gridcontainer gridcontainer grid grid-cols-1 md:grid-cols-3'>
 
                 <div className='gridcontainer-left left-gridcontainer col-span-2 flex flex-col justify-center '>
                         <div className='left-gridcontainer-title'>

@@ -6,18 +6,24 @@ import Posibilities from './components/Posibilities'
 import HowToStart from './components/HowToStart'
 import Indibusines from './components/Indibussines'
 import InvolveClients from './components/InvolveClients'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <>
+      <body>
+        <main>
+            <Header/>
+            <Swipercomponent/>
+            <Magic/>
+            <Posibilities/>
+            <HowToStart/>
+            <Indibusines/>
+            <InvolveClients/>
+            <Footer/>
+        </main>
+      </body>
     
-    <Header/>
-    <Swipercomponent/>
-    <Magic/>
-    <Posibilities/>
-    <HowToStart/>
-    <Indibusines/>
-    <InvolveClients/>
     </>
   )
 }

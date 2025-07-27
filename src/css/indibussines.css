@@ -30,6 +30,7 @@
 }
 .right-slider{
     padding: 50px;
+    width: 100%;
 }
 
 .right-user{
@@ -70,4 +71,17 @@
      font-family: "Inter";
     font-weight: 400;
     font-size: 22px;
+}
+@media screen and (max-width:768px) {
+    .indibusines-wrapper{
+        
+    max-width: 400px;
+   
+    }
+    .indibusines-container{
+        padding: 0px 20px 0px 20px;
+    }
+    .left-subtitle{
+           margin-bottom: 10px;
+    }
 }

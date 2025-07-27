@@ -5,14 +5,14 @@ import '../css/header.css'
 const Header = () => {
   return (
     <header className='header '>
-        <div className='header-container mx-auto max-w-[1280px] flex flex-col items-center justify-center pt-[30px] '>
+        <div className='header-container mx-auto max-w-[1280px] sm:px-6 flex flex-col items-center justify-center pt-[10px] '>
             <Navbar/>
-            <div className='header-title mb-[16px]'>
+            <div className='header-title '>
                 <h1>
                     Приводь клієнтів через емоції, а не банери
                 </h1>
             </div>
-            <div className='header-subtitle mb-[16px]'>
+            <div className='header-subtitle '>
                 <h2>
                     INDI — платформа гейміфікованого залучення. Люди шукають ваші пропозиції, грають — і самі приходять до вас.
                 </h2>

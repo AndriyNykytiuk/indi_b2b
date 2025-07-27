@@ -3,9 +3,14 @@
 }
 .left-gridcontainer-title{
 max-width: 603px;
+
+}
+.left-gridcontainer-title h3{
+    width: 100%;
+    width: 100%;
 font-family: "Inter";
 font-weight: 900;
-font-size: clamp(24px,3vw,48px);
+font-size: clamp(32px,8vw,48px);
 }
 
 .left-gridcontainer-subtitle{
@@ -42,4 +47,14 @@ color: #667085;
     height: 100%;
   
     object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+    .left-gridcontainer-button {
+        margin-bottom: 40px;
+    }
+    .right-gridcontainer-image{
+  
+      padding-bottom: 90%;
+}
 }

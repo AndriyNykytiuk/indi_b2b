@@ -5,7 +5,7 @@
 width: 100%;
 font-family: "Inter";
 font-weight: 900;
-font-size: clamp(24px,3vw,48px);
+font-size: clamp(32px,8vw,48px);
 }
 .magic-subtitle{
 max-width: 623px;
@@ -28,16 +28,25 @@ font-size: clamp(14px,2vw,19px);
 
 }
 .item-text{
-
+max-width: 100%;
 }
 .item-text h4{
        font-family: "inter";
-    font-weight: 400;
-    font-size: clamp(6px,3vw,16px);
+    font-weight: 600;
+    font-size: clamp(10px,3vw,16px);
     margin-bottom: 16px;
 }
 
 .item-text p{
     color: #667085;
     font-family: Inter;
+}
+
+@media screen and (max-width:768px) {
+    .magic-container{
+        padding: 15px 30px;
+    }
+    .magic-subtitle{
+        margin-bottom: 1rem;
+    }
 }

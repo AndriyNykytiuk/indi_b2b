@@ -22,7 +22,7 @@ const Posibilities = () => {
                             Клієнти приходять грати — ви отримуєте продажі. Мінімум зусиль, максимум залучення.
                         </h4>
                     </div>
-                    <div className='posibilities-items item grid grid-cols-3 grid-rows-2 gap-y-8 mb-[60px]'>
+                    <div className='posibilities-items item grid grid cols-2 md:grid-cols-3 grid-rows-2 gap-y-8 mb-[60px]'>
                             <div className='item-posibiblity'>
                                 <div className='item-pict'>
                                     <div className='item-num'>

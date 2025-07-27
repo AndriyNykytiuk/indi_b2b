@@ -55,3 +55,24 @@ export const fourthStep={
     transition: {delay:4.5, duration: 1.5 }
   }
 }
+export const navbar = {
+  hidden: {
+    opacity: 0,
+    y: -50, 
+    pointerEvents: 'none', 
+  },
+  visible: {
+    y: [0, 50, 0], 
+    opacity: [0, 1],
+    pointerEvents: 'auto',
+    transition: {
+      y: { delay: 4.5, duration: 1.2 },
+      opacity: { delay: 4.5, duration: 1.2 },
+    },
+  },
+};
+
+export const menuVariants={
+  open:{x:0},
+  close:{x:'100%'}
+}

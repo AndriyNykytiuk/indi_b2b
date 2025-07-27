@@ -16,40 +16,40 @@ const HowToStart = () => {
                     Потрібно лише декілька хвилин щоб запустити свою першу пропозицію
                 </h4>
             </div>
-            <div className='howtostart-items grid grid-cols-3 gap-4 mb-[60px]'>
-                <div className='howtostart-item card-item'>
+            <div className='howtostart-items flex gap-4 mb-[60px]'>
+                <div className='howtostart-item card flex-1 flex flex-col'>
                     <div className='card-item-pict'>
                         <img src={pensil} alt="Image"/>
                     </div>
-                    <div className='card-item-text'>
+                    <div className='card-item-text flex-1'>
                         <h3>Зареєструйтесь</h3>
                         <p>Створіть бізнес-акаунт за кілька хвилин — без договорів і зайвих дзвінків.</p>
                     </div>
-                    <div className='card-item-button'>
+                    <div className='card-item-button mt-auto'>
                         <a href="#">Детальніше</a>
                     </div>
                 </div>
-                <div className='howtostart-item card '>
+                <div className='howtostart-item card flex-1 flex flex-col'>
                     <div className='card-item-pict'>
                         <img src={label} alt="Image"/>
                     </div>
-                    <div className='card-item-text'>
+                    <div className='card-item-text flex-1'>
                         <h3>Створіть пропозицію</h3>
                         <p>Додайте акцію, знижку або подарунок — все інтуїтивно і просто.</p>
                     </div>
-                        <div className='card-item-button'>
+                        <div className='card-item-button mt-auto'>
                         <a href="#">Детальніше</a>
                     </div>
                 </div>
-                <div className='howtostart-item card'>
+                <div className='howtostart-item card flex-1 flex flex-col'>
                     <div className='card-item-pict'>
                         <img src={men} alt="Image"/>
                     </div>
-                    <div className='card-item-text'>
+                    <div className='card-item-text flex-1'>
                         <h3>Отримуйте клієнтів</h3>
                         <p>Пропозиції одразу з’являються на мапі або в маркетплейсі — користувачі бачать, грають та активують.</p>
                     </div>
-                        <div className='card-item-button'>
+                        <div className='card-item-button '>
                         <a href="#">Детальніше</a>
                     </div>
                 </div>

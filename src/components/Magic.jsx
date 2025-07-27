@@ -16,7 +16,7 @@ const Magic = () => {
                 <div className='magic-subtitle mb-[95px]'>
                     <h4>INDI робить залучення клієнтів легким і навіть трохи чарівним. Просто створіть пропозицію — ми зробимо решту.</h4>
                 </div>
-                <div className='magic-items grid grid-cols-4 gap-3 '>
+                <div className='magic-items grid grid-cols-2 gap-3 md:grid-cols-4 gap-2 '>
                         <motion.div className='magic-item item'
                         variants={firstStep}
                          initial="hidden" 

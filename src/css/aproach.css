@@ -16,7 +16,7 @@
 
 }
 .card-item:not(:last-child){
-    margin-bottom: 16px;
+ 
 }
 
 .trafic{
@@ -104,4 +104,40 @@ width: clamp(200px, 50vw, 400px);
     max-width: 426px;
     width: 100%;
     color: #919191;
+}
+
+@media screen and (max-width:768px) {
+  .scheme-center{
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .center-paragraph{
+    margin-top: 0px;
+  }
+  .trafic::after,
+  .dificult::after,
+  .client::after,
+  .prize::after,
+  .analize::after{
+    display: none;
+  }
+  .item-title{
+    max-width: 100%;
+}
+.scheme-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.item-icon img{
+  width: 70px;
+  height: 70px;
+}
+.analize,
+.client,
+.prize{
+  max-width: 30%;
+}
 }

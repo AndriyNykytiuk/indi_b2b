@@ -9,4 +9,175 @@
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    transition:all 0.3s ;
+}
+.navbar{
+ position: fixed;
+ top: 0;
+ max-width: 800px;
+ width: 100%;
+ z-index: 100;
+    padding: 10px;
+}
+.button:hover{
+ box-shadow: 0 0 0 2px white, 0 0 0 4px #6138ff;
+ background:#FFFF;
+ color: #6138ff;
+ transition:all 0.3s ;
+ -webkit-transition:all 0.3s ;
+ -moz-transition:all 0.3s ;
+ -ms-transition:all 0.3s ;
+ -o-transition:all 0.3s ;
+}
+
+/*.burger-button span{
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: #6138ff;
+}*/
+.navbar-link{
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    padding: 4px 8px;
+    position: relative;
+}
+.navbar-link:hover{
+       color: #6138ff;
+    font-weight: 500;
+}
+.navbar-link::before{
+  
+    position: absolute;
+    content: '';
+    background-color: #6138ff;
+    top:100%;
+    left:0;
+    width:0%;
+    height: 3px;
+}
+.navbar-link:hover::before{
+ 
+    width:100%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.burger-button{
+    position: relative;
+}
+.burger-button span:not(:last-child){
+        margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px){
+    .burger-button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+ 
+.header{
+        border-bottom: #6138ff solid 5px;
+        z-index: 1000;
+}
+.navbar{
+    position: fixed;
+}
+.navbar-container {
+    width: 100%;
+    z-index: 200;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+  .navbar-list {
+  position: fixed;
+  top:83px;
+  left:150%;
+  flex-direction: column;
+  background-color: #FFFF;
+  width: 90%;
+  height: 100vh;
+  padding-top: 90px;
+  z-index: 1;
+  transition: left 0.3s ease;
+  border-radius: 20px;
+  border:#6138ff solid 1px;
+  -webkit-transition: left 0.3s ease;
+  -moz-transition: left 0.3s ease;
+  -ms-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.navbar-list.open {
+    left: 5%;
+    /*відкрито*/transition: left 0.3s ease;
+    z-index: 1;
+    -webkit-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    -ms-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+}
+.first,.second,.third{
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: #6138ff;
+    transition: all 0.3s ease-in ;
+    -webkit-transition: all 0.3s ease-in ;
+    -moz-transition: all 0.3s ease-in ;
+    -ms-transition: all 0.3s ease-in ;
+    -o-transition: all 0.3s ease-in ;
+}
+.first.open{
+      position: absolute;
+      top: -13px;
+      left: 2.5px;
+      width:3px;
+      height: 3px;
+      z-index: 1000;
+      border-radius: 50%;
+      transition: all 0.3s ease-in ;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+.second.open{
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    width:18px;
+    z-index: 1000;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    border-radius: 1px;
+    transition: all 0.3s ease-in ;
+}
+.third.open{
+    position: absolute;
+    top: 8px;
+    left:1px;
+    width:6px;
+    z-index: 1000;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+      transition: all 0.3s ease-in ;
+}
 }
