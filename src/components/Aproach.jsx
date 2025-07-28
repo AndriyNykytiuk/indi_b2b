@@ -80,7 +80,7 @@ const Aproach = () => {
                             </div>
                         </div>
                     </div>
-                                         <div className='card-item client item flex flex-col border-1 rounded-[30px] p-4'
+                    <div className='card-item client item flex flex-col border-1 rounded-[30px] p-4'
                       variants={rightVariant}
                       initial="hidden" 
                       animate="visible"
@@ -112,7 +112,7 @@ const Aproach = () => {
         </div>):
         (<div className='aproach-container mx-auto border-1 p-6 rounded-[48px] '>
             <div className='aproach-scheme scheme grid grid-cols-4' >
-                <div className='scheme-left card'>
+                <div className='scheme-left card flex flex-col items-center justify-between gap-3'>
                     <motion.div className='card-item item trafic flex flex-col border-1 rounded-[30px] p-4' 
                     variants={leftVariant} 
                     initial="hidden" 
@@ -153,14 +153,12 @@ const Aproach = () => {
                 initial="hidden" 
                 animate="visible"
                 >
-                    <div >
-                        <img src={bigindi} alt="Image"/>
-                    </div>  
+                    
                     <p className='mt-[115px] center-paragraph'>
                         Маркетингові кампанії коштують дорого<br/> створюємо канал для прямої взаємодії з користувачем без посередників
                     </p>
                 </motion.div>
-                <div className='scheme-right'>
+                <div className='scheme-right flex flex-col items-center justify-around'>
                      <motion.div className='card-item client item flex flex-col border-1 rounded-[30px] p-4'
                       variants={rightVariant}
                       initial="hidden" 

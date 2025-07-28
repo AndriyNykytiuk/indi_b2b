@@ -1,9 +1,14 @@
 import React from 'react'
 import '../css/magic.css'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import { firstStep, fourthStep, secondStep, thirdStep } from './animations/anime'
 
 const Magic = () => {
+    const {ref,inView}=useInView({
+        threshold:0.3,
+        triggerOnce:true,
+    })
   return (
     <section className='magic'>
 
@@ -18,9 +23,11 @@ const Magic = () => {
                 </div>
                 <div className='magic-items grid grid-cols-2 gap-3 md:grid-cols-4 gap-2 '>
                         <motion.div className='magic-item item'
+                       
+                        ref={ref}
                         variants={firstStep}
                          initial="hidden" 
-                         animate="visible"
+                         animate={inView ? 'visible' : 'hidden'}
                         >
                             <div className='item-step'>
                                 <h4>01.</h4>
@@ -31,9 +38,10 @@ const Magic = () => {
                             </div>
                         </motion.div>
                         <motion.div className='magic-item item'
+                        ref={ref}
                         variants={secondStep}
                          initial="hidden" 
-                         animate="visible"
+                         animate={inView ? 'visible' : 'hidden'}
                         >
                             <div className='item-step'>
                                 <h4>02.</h4>
@@ -44,9 +52,10 @@ const Magic = () => {
                             </div>
                         </motion.div>
                         <motion.div className='magic-item item'
+                        ref={ref}
                         variants={thirdStep}
                          initial="hidden" 
-                         animate="visible">
+                         animate={inView ? 'visible' : 'hidden'}>
                             <div className='item-step'>
                                 <h4>03.</h4>
                             </div>
@@ -56,9 +65,10 @@ const Magic = () => {
                             </div>
                         </motion.div>
                         <motion.div className='magic-item item'
+                        ref={ref}
                         variants={fourthStep}
                          initial="hidden" 
-                         animate="visible">
+                         animate={inView ? 'visible' : 'hidden'}>
                             <div className='item-step'>
                                 <h4>04.</h4>
                             </div>
