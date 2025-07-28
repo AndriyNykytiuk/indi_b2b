@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-bottom bottom">
                     <ul className='bottom-list'>
-                        <li><a href="#">© 2025 INDI. Всі права захищені.</a></li>
+                        <li><h4>© 2025 INDI. Всі права захищені.</h4></li>
                         <li><a href="#">Політика конфіденційності</a></li>
                         <li><a href="#">Умови обслуговування</a></li>
                         <li><a href="#">Налаштування Cookies</a></li>

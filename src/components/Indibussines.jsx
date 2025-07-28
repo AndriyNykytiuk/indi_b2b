@@ -197,7 +197,7 @@ const Indibusines = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                                                <SwiperSlide>
+                                <SwiperSlide>
                                     <div className='right-card'>
                                         <div className='right-user user'>
                                             <div className='user-face'>

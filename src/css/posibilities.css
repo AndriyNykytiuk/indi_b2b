@@ -62,7 +62,7 @@ width: 100%;
 }
 .button-link a{
     position: relative;
-
+    
     width: 100%;
     padding: 10px 20px;
      box-shadow: 0 0 0 2px transparent, 0 0 0 4px transparent;
@@ -70,7 +70,7 @@ width: 100%;
 }
 .button-link a:hover{
 color: #6138FF;
-font-weight: 600;
+font-weight: 400;
    box-shadow: 0 0 0 2px white, 0 0 0 4px #6138ff;
   padding: 6px 20px;
   border-radius: 12px;
@@ -85,7 +85,7 @@ font-weight: 600;
 .button-link {
     position: relative;
     padding: 10px 20px;
-
+    box-sizing: border-box;
      box-shadow: 0 0 0 2px transparent, 0 0 0 4px transparent;
 
 }

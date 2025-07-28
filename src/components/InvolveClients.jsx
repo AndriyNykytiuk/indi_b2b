@@ -15,7 +15,7 @@ const InvolveClients = () => {
                          <div className='left-gridcontainer-subtitle'>
                             <h4>INDI — це новий спосіб взаємодії з клієнтами: без складних інтеграцій, з мінімальними витратами на рекламу та повним контролем</h4>
                         </div>
-                        <div className='left-gridcontainer-button'>
+                        <div className='left-gridcontainer-button flex'>
                             <a href="#">Запустити INDI</a>
                         </div>
                 </div>
