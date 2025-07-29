@@ -7,6 +7,8 @@ import HowToStart from './components/HowToStart'
 import Indibusines from './components/Indibussines'
 import InvolveClients from './components/InvolveClients'
 import Footer from './components/Footer'
+import Questions from './components/Questions'
+import MainQuestionComponent from './components/MainQuestionComponent'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
             <HowToStart/>
             <Indibusines/>
             <InvolveClients/>
+            <Questions/>
+            <MainQuestionComponent/>
             <Footer/>
         </main>
       </body>
