@@ -27,83 +27,30 @@
 .trafic{
     position: relative;
 }
-.trafic::after{
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 105%;
-  width: 150%;
-  height: 74%;
-  background-image: url('../imsg/peopleToindiTop.svg');
-  background-repeat: no-repeat;
-  background-size: contain; /* або cover */ 
-}
+
 
 .dificult{
     position: relative;
 }
-.dificult::after{
-      content: '';
-  position: absolute;
-  top: -24%;
-  left: 105%;
 
-width: clamp(200px, 50vw, 400px);
-
-  height: 74%;
-  background-image: url('../img/giweftToindiBottom.svg');
-  background-repeat: no-repeat;
-  background-size: contain; /* або cover */ 
-}
 
 .client{
     position: relative;
 }
 
-.client::after {
-  content: '';
-  position: absolute;
-  top: 2rem;
-  left: 0;
-  width: clamp(100px, 10vw, 200px);
-  height: auto;
-  aspect-ratio: 16 / 9;
-  background-image: url('../img/cliensdctToIndi.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 
 
 .prize{
     position: relative;
 }
-.prize::after{
-  content: '';
-  position: absolute;
-  top: 50%;
-  left:-75%;
-  width: 69%;
-  height: 120%;
-  background-image: url('../img/prizeToIndisd.svg');
-  background-repeat: no-repeat;
-  background-size: contain; /* або cover */ 
-}
+
 
 .analize{
     position: relative;
 }
 
-.analize::after{
-     content: '';
-  position: absolute;
-  top: -40%;
-  left:-75%;
-  width: 69%;
-  height: 120%;
-  background-image: url('../img/analizeTsdcoIndi.svg');
-  background-repeat: no-repeat;
-  background-size: contain; /* або cover */ 
-}
+
 .center-paragraph{
     font-family: "inter";
     font-size: clamp(8px,1vw,12px);
@@ -112,27 +59,19 @@ width: clamp(200px, 50vw, 400px);
     width: 100%;
     color: #919191;
 }
-@media screen and (max-width:900px){
-  .scheme-right {
-    justify-content: center;
-  }
-}
+
 @media screen and (max-width:768px) {
   .scheme-center{
     justify-content: center;
     align-items: center;
+    
     padding: 20px 0px 20px 0px;
   }
   .center-paragraph{
     margin-top: 0px;
+    font-size: 10px;
   }
-  .trafic::after,
-  .dificult::after,
-  .client::after,
-  .prize::after,
-  .analize::after{
-    display: none;
-  }
+  
   .item-title{
     max-width: 100%;
 }
@@ -141,6 +80,17 @@ width: clamp(200px, 50vw, 400px);
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+}
+.item-bottom p{
+  font-size: 14px;
+}
+.scheme-left h4{
+   font-size: 18px;
+  text-align: center;
+}
+.scheme-right h4{
+  font-size: 12px;
+  text-align: center;
 }
 .item-icon img{
   width: 70px;
@@ -153,6 +103,5 @@ width: clamp(200px, 50vw, 400px);
 }
 .aproach-scheme{
   background: none;
-
 }
 }

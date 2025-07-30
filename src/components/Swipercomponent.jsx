@@ -22,9 +22,15 @@ const Swipercomponent = () => {
             }}
           loop={true}
           spaceBetween={10}
-          slidesPerView={9}
+          slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
+          breakpoints={{
+            768:{
+              slidesPerView:9,
+              spaceBetween:20,
+            },
+          }}
           
         >
           <SwiperSlide className='swiper-pict' ><img src={relube} alt="Slide 1" /></SwiperSlide>

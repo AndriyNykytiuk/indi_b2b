@@ -78,4 +78,10 @@
     .footer-top,.top-list,.bottom-list{
         flex-direction: column;
     }
+    .social{
+        width: 100%;
+    }
+    .social-list{
+        justify-content: space-around;
+    }
 }

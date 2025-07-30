@@ -8,12 +8,12 @@ import Indibusines from './components/Indibussines'
 import InvolveClients from './components/InvolveClients'
 import Footer from './components/Footer'
 import Questions from './components/Questions'
-import MainQuestionComponent from './components/MainQuestionComponent'
+import FAQ from './components/FAQ'
 
 const App = () => {
   return (
-    <>
-      <body>
+    
+   
         <main>
             <Header/>
             <Swipercomponent/>
@@ -23,12 +23,12 @@ const App = () => {
             <Indibusines/>
             <InvolveClients/>
             <Questions/>
-            <MainQuestionComponent/>
+            <FAQ/>
             <Footer/>
         </main>
-      </body>
     
-    </>
+    
+    
   )
 }
 

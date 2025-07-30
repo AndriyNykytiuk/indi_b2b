@@ -44,9 +44,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="max-w-4xl mx-auto p-4">
+    <section className="max-w-4xl mx-auto max-w-[850px] p-4">
       {/* Заголовки */}
-      <div className="flex items-center justify-center gap-4 mb-6">
+      <div className=" grid grid-cols-2 md:flex items-center flex-wrap justify-center  gap-4 mb-6">
         {Object.keys(data).map((key) => (
           <button
             key={key}
@@ -54,7 +54,7 @@ const FAQ = () => {
               setActiveTopic(key);
               setOpenAnswerIdx(null); // скидає відкриту відповідь при зміні теми
             }}
-            className={`py-1 px-2 rounded transition cursor-pointer ${
+            className={`py-1 px-2 rounded transition-all duration-300  cursor-pointer ${
               activeTopic === key ? 'text-white rounded-xl bg-[#8732ff]' : 'bg-white text-[#8332ff]'
             }`}
           >
@@ -62,13 +62,12 @@ const FAQ = () => {
           </button>
         ))}
       </div>
-
       {/* Питання-Відповіді */}
       <ul className="space-y-4">
         {data[activeTopic].map((item, idx) => (
           <li key={idx} className="border-b-[1px]  shadow-sm">
             <div className='flex items-center gap-2'>
-                <h4 className='text-[#667085] text-xl font-medium opacity-60 font-[Inter]'>{String(idx + 1).padStart(2, '0')}</h4>
+                <h4 className='text-[#667085] text-xl font-medium opacity-60 '>{String(idx + 1).padStart(2, '0')}</h4>
                  <button
               onClick={() => toggleAnswer(idx)}
               className="w-full text-left px-4 py-3 font-regular cursor-pointer transition-all duration-300"
