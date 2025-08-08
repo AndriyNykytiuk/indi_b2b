@@ -98,7 +98,7 @@ const Aproach = () => {
                      variants={rightVariant}
                       initial="hidden" 
                       animate="visible">
-                        <div className='item-top flex flex-col md:flex justify-between items-center mb-4'>
+                        <div className='item-top flex  flex-col md:flex  justify-between items-center mb-4'>
                             <div className='item-icon'>
                                 <img src={diagram} alt="Image"/>
                             </div>
@@ -164,7 +164,7 @@ const Aproach = () => {
                       initial="hidden" 
                       animate="visible"
                      >
-                        <div className='item-top flex justify-between items-center mb-4'>
+                        <div className='item-top flex justify-between gap-4 items-center mb-4'>
                             <div className='item-icon'>
                                 <img src={map} alt="Image"/>
                             </div>
@@ -177,7 +177,7 @@ const Aproach = () => {
                      variants={rightVariant}
                       initial="hidden" 
                       animate="visible">
-                        <div className='item-top flex justify-between items-center mb-4'>
+                        <div className='item-top flex justify-between gap-4 items-center mb-4'>
                             <div className='item-icon'>
                                 <img src={prize} alt="Image"/>
                             </div>
@@ -190,7 +190,7 @@ const Aproach = () => {
                      variants={rightVariant}
                       initial="hidden" 
                       animate="visible">
-                        <div className='item-top flex justify-between items-center mb-4'>
+                        <div className='item-top flex justify-between gap-4 items-center mb-4'>
                             <div className='item-icon'>
                                 <img src={diagram} alt="Image"/>
                             </div>

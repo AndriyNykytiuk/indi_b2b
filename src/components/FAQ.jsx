@@ -74,17 +74,17 @@ const FAQ = () => {
             >
               {item.q}
             </button>
-            <div>
+            <div onClick={() => toggleAnswer(idx)}>
                 {openAnswerIdx===idx ? <IoIosArrowDown/>: <IoIosArrowUp/>}
             </div>
             </div>
            
-            {openAnswerIdx === idx && (
+            {openAnswerIdx === idx &&  (
                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.4 }}
+                    initial={{ opacity:0, height: 0 }}
+                    animate={{ opacity:1, height: 'auto',overflow: 'hidden' }}
+                    exit={{ display: 'none', height: 0 }}
+                    transition={{ duration: 0.2 }}
                     className="px-4 pb-3 border-t text-gray-600"
                     >
                     {item.a}

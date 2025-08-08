@@ -11,7 +11,7 @@ width:100%;
 
 .header-title{
     position: relative;
-    padding: 10px 60px;
+    padding: 10vh 0px 5vh 0px;
     max-width: 845px;
 }
 .header-title h1{

@@ -17,13 +17,17 @@ const Swipercomponent = () => {
           <Swiper
            modules={[Autoplay]}
             autoplay={{
-              delay: 3000,
+              delay: 0,
               disableOnInteraction: false, 
+              pauseOnMouseEnter: false,
             }}
           loop={true}
           spaceBetween={10}
-          slidesPerView={3}
-          navigation
+          speed={3000}
+          slidesPerView={'auto'}
+           allowTouchMove={false}
+         
+          grabCursor={false}
           pagination={{ clickable: true }}
           breakpoints={{
             768:{
