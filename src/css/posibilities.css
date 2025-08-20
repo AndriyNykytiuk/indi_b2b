@@ -84,18 +84,17 @@ font-weight: 400;
 }
 .button-link {
     position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 10px 20px;
     box-sizing: border-box;
      box-shadow: 0 0 0 2px transparent, 0 0 0 4px transparent;
 
 }
-.button-link::after{
-    position: absolute;
-       content: '>';
-    width: 5px;
-    height: 5px;
-    right:-10px;
-}
+
 
 @media screen and (max-width:768px) {
     .posibilities-container{
@@ -107,5 +106,8 @@ font-weight: 400;
     }
     .subtitle{
         margin-bottom: 16px;
+    }
+    .button-link {
+        box-sizing:content-box;
     }
 }

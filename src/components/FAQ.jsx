@@ -5,32 +5,30 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const data = {
   Загальні: [
-   { q: 'Як це працює?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-    { q: 'Чи потрібна інтеграція?', a: 'Ні, не потрібно підключати API чи касові системи. INDI працює автономно: ви просто створюєте пропозицію в особистому кабінеті, і вона одразу з’являється в застосунку.Ми зробили все, щоб запуск не вимагав розробників або зайвого часу. Менше ніж за 5 хвилин — і ви вже в ефірі.' },
-     { q: 'Скільки це коштує?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Який трафік я отримаю?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Що, якщо клієнт не прийде?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
+   { q: 'Що таке INDI і як це працює?', a: ' INDI — це платформа, яка залучає нових клієнтів до вашого бізнесу через гейміфіковані знижки. Ви створюєте спеціальні пропозиції, а користувачі «полюють» за ними через мобільний застосунок або маркетплейс.' },
+    { q: ' Для кого підходить INDI?', a: ' Ми працюємо з Horeca, роздрібною торгівлею, сервісами, івентами, клініками та будь-яким бізнесом, якому важливо залучати локальних клієнтів і вимірювати результат' },
+    { q: 'Чи потрібна інтеграція з INDI?', a: 'Ні, не потрібно підключати API чи касові системи. INDI працює автономно: ви просто створюєте пропозицію в особистому кабінеті, і вона одразу з’являється в застосунку.' },
+    { q: 'Як я можу виміряти ефективність INDI?', a: 'Ви отримуєте детальну статистику по кожній пропозиції: кількість переглядів, переходів, використаних знижок і подарунків. Це дозволяє оцінити ROI та коригувати стратегію.' },
+    { q: 'Чи можу я самостійно керувати пропозиціями?', a: 'Так, у вас є повний контроль над створенням, редагуванням і видаленням пропозицій у вашому особистому кабінеті.' },
 ],
   Підключення: [
- { q: 'Як це працює?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-    { q: 'Чи потрібна інтеграція?', a: 'Ні, не потрібно підключати API чи касові системи. INDI працює автономно: ви просто створюєте пропозицію в особистому кабінеті, і вона одразу з’являється в застосунку.Ми зробили все, щоб запуск не вимагав розробників або зайвого часу. Менше ніж за 5 хвилин — і ви вже в ефірі.' },
-     { q: 'Скільки це коштує?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Який трафік я отримаю?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Що, якщо клієнт не прийде?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
+ { q: 'Чи потрібно щось встановлювати чи підключати?', a: ' Ні, спеціальна інтеграція чи касове обладнання не потрібні. Ви працюєте через наш особистий кабінет. Все налаштовується менше ніж за 5 хвилин.' },
+    { q: 'Чи потрібні розробники для налаштування?', a: ' Ні. Ви можете запускати акції самостійно — без технічної команди чи додаткових витрат.' },
+    { q: 'Як швидко я можу почати?', a: ' Ви можете запустити першу акцію вже сьогодні. Все, що вам потрібно — це зареєструватися в особистому кабінеті INDI.' },
+    { q: 'Чи можу я змінювати пропозиції після запуску?', a: 'Так, ви можете редагувати умови акцій у будь-який час. Зміни будуть застосовані миттєво.' },
+    { q: 'Чи можу я зупинити акцію в будь-який момент?', a: 'Так, ви можете призупинити або видалити акцію в будь-який час через особистий кабінет.' },
   ],
   Платформа: [
-    { q: 'Як це працює?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-    { q: 'Чи потрібна інтеграція?', a: 'Ні, не потрібно підключати API чи касові системи. INDI працює автономно: ви просто створюєте пропозицію в особистому кабінеті, і вона одразу з’являється в застосунку.Ми зробили все, щоб запуск не вимагав розробників або зайвого часу. Менше ніж за 5 хвилин — і ви вже в ефірі.' },
-     { q: 'Скільки це коштує?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Який трафік я отримаю?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Що, якщо клієнт не прийде?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
+    { q: 'Який трафік я отримаю?', a: ' Ви отримаєте локальний трафік з близької зони. Користувачі бачать картки у вашій локації і приходять саме до вас. Це економить витрати на залучення та підвищує конверсію.' },
+    { q: ' Як виміряти результат?', a: ' В особистому кабінеті ви бачите, хто скористався знижкою, коли та як. Це дозволяє рахувати реальний ROI кожної акції.' },
+     { q: 'Що якщо клієнт не прийде?', a: ' Ви платите комісію лише за використані знижки. Якщо картку не активували — ви нічого не втрачаєте.' },
+    { q: 'Чи можу я самостійно керувати пропозиціями?', a: 'Так, у вас є повний контроль над створенням, редагуванням і видаленням пропозицій у вашому особистому кабінеті.' },
   ],
   Ціни: [
-   { q: 'Як це працює?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-    { q: 'Чи потрібна інтеграція?', a: 'Ні, не потрібно підключати API чи касові системи. INDI працює автономно: ви просто створюєте пропозицію в особистому кабінеті, і вона одразу з’являється в застосунку.Ми зробили все, щоб запуск не вимагав розробників або зайвого часу. Менше ніж за 5 хвилин — і ви вже в ефірі.' },
-     { q: 'Скільки це коштує?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Який трафік я отримаю?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
-     { q: 'Що, якщо клієнт не прийде?', a: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non rerum, hic maxime doloribus provident dolore id ipsam eos animi quasi. Vitae atque ipsam quos porro quaerat dolore odio deleniti consectetur. Soluta doloremque rem amet, provident nihil fugit quasi inventore quo ratione velit nulla odio autem sit quam ullam culpa?' },
+   { q: 'Скільки коштує підключення?', a: ' Підключення безкоштовне. Ви сплачуєте тільки комісію з кожної активованої картки — без прихованих витрат.' },
+    { q: ' Чи можна спробувати безкоштовно?', a: ' Так, ми пропонуємо безкоштовний тестовий період для бізнесів, щоб ви могли перевірити платформу та оцінити ефективність.' },
+    { q: 'Чи є додаткові платежі?', a: 'Ні, немає жодних прихованих платежів. Ви сплачуєте тільки за активовані картки.' },
+    { q: 'Як відбувається оплата?', a: 'Оплата здійснюється автоматично після активації картки клієнтом. Ви отримуєте детальний звіт про всі транзакції.' },
   ],
 };
 
@@ -65,7 +63,7 @@ const FAQ = () => {
       {/* Питання-Відповіді */}
       <ul className="space-y-4">
         {data[activeTopic].map((item, idx) => (
-          <li key={idx} className="border-b-[1px]  shadow-sm">
+          <li key={idx} className="border-b-[1px]  shadow-sm px-2">
             <div className='flex items-center gap-2'>
                 <h4 className='text-[#667085] text-xl font-medium opacity-60 '>{String(idx + 1).padStart(2, '0')}</h4>
                  <button
@@ -84,7 +82,7 @@ const FAQ = () => {
                     initial={{ opacity:0, height: 0 }}
                     animate={{ opacity:1, height: 'auto',overflow: 'hidden' }}
                     exit={{ display: 'none', height: 0 }}
-                    transition={{ duration: 0.2 }}
+                    transition={{ duration: 0.1 }}
                     className="px-4 pb-3 border-t text-gray-600"
                     >
                     {item.a}

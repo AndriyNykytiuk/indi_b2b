@@ -61,13 +61,20 @@
   opacity: 1;
 }
 .user-face{
-    max-width: 50px;
-    max-height: 50px;
-
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .user-face img{
-    aspect-ratio: 1/1;
-    object-fit: contain;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
 }
 .user-name{
     font-family: "Inter";

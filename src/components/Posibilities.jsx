@@ -113,7 +113,7 @@ const Posibilities = () => {
                             <a href="#">Долучитись до INDI</a>
                         </div>
                         <div className='button-link'>
-                            <a href="#">Дізнатись більше</a>
+                            <a href="#">Дізнатись більше  &gt; </a>
                         </div>
                     </div>
                 </div>
