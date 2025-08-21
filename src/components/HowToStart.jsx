@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useState}from 'react'
 import '../css/howtostart.css'
 import pensil from '../img/pensil.svg'
 import label from '../img/label.svg'
 import men from '../img/men.svg'
 const HowToStart = () => {
+    const [isMessage, setIsMessage] = useState(false);
+    const [isRegistered, setIsRegistered] = useState(false);
+    const [isPorpose, setIsPorpose] = useState(false);
+    const[isActivate, setIsActivate] = useState(false);
   return (
     <section className='howtostart pt-[40px] pb-[40px]'>
 
@@ -25,7 +29,10 @@ const HowToStart = () => {
                         <h3>Зареєструйтесь</h3>
                         <p>Створіть бізнес-акаунт за кілька хвилин — без договорів і зайвих дзвінків.</p>
                     </div>
-                    <div className='card-item-button mt-auto'>
+                    <div className='card-item-button mt-auto relative'
+                            onMouseEnter={() => setIsRegistered(true)}
+                            onMouseLeave={()=> setIsRegistered(false)}>
+                            {isRegistered && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                         <a href="#">Детальніше</a>
                     </div>
                 </div>
@@ -37,7 +44,10 @@ const HowToStart = () => {
                         <h3>Створіть пропозицію</h3>
                         <p>Додайте акцію, знижку або подарунок — все інтуїтивно і просто.</p>
                     </div>
-                        <div className='card-item-button mt-auto'>
+                        <div className='card-item-button mt-auto relative'
+                            onMouseEnter={() => setIsPorpose(true)}
+                            onMouseLeave={()=> setIsPorpose(false)}>
+                            {isPorpose && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                         <a href="#">Детальніше</a>
                     </div>
                 </div>
@@ -49,12 +59,18 @@ const HowToStart = () => {
                         <h3>Отримуйте клієнтів</h3>
                         <p>Пропозиції одразу з’являються на мапі або в маркетплейсі — користувачі бачать, грають та активують.</p>
                     </div>
-                        <div className='card-item-button '>
+                        <div className='card-item-button relative'
+                            onMouseEnter={() => setIsMessage(true)}
+                            onMouseLeave={()=> setIsMessage(false)}>
+                            {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                         <a href="#">Детальніше</a>
                     </div>
                 </div>
             </div>
-            <div className='button'>
+            <div className='button relative'
+                            onMouseEnter={() => setIsActivate(true)}
+                            onMouseLeave={()=> setIsActivate(false)}>
+                            {isActivate && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                 <a href="#">Активувати INDI</a>
             </div>
         </div>

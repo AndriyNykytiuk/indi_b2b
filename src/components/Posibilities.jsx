@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../css/posibilities.css'
 import map from '../img/bxs_map.svg'
 import medal from '../img/medal.svg'
@@ -7,6 +7,8 @@ import diagram from '../img/mdi_analytics.svg'
 import rocket from '../img/rocket.svg'
 import dollar from '../img/dollar.svg'
 const Posibilities = () => {
+    const [isMessage, setIsMessage] = useState(false);
+    const [isMore, setIsMore] = useState(false);
   return (
     <section className='posibilities  mb-[80px]'>
 
@@ -109,10 +111,16 @@ const Posibilities = () => {
                             </div>
                     </div>
                     <div className='posibilities-button flex gap-8 items-center '>
-                        <div className='button'>
+                        <div className='button relative'
+                        onMouseEnter={() => setIsMessage(true)}
+                        onMouseLeave={() => setIsMessage(false)}>
+                            {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                             <a href="#">Долучитись до INDI</a>
                         </div>
-                        <div className='button-link'>
+                        <div className='button-link relative'
+                        onMouseEnter={() => setIsMore(true)}
+                        onMouseLeave={() => setIsMore(false)}>
+                            {isMore && <span className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                             <a href="#">Дізнатись більше  &gt; </a>
                         </div>
                     </div>

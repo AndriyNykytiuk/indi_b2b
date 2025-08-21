@@ -36,7 +36,29 @@ width:100%;
     font-weight:  300;
 
 }
-
+.button::after {
+   position: absolute;
+   content: attr(data-name); /* це відповідає за випливаюче сповіщення при наведенні на посилання у Footer*/
+   background-color: #b12121;
+    text-align: center;
+   border-radius: 10px;
+   top:-1.5rem;
+   left:-10rem;
+   width:210px;
+   height: auto;
+   opacity: 0;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   z-index: 100;
+}
+.header-button {
+    position: relative;
+}
+.button::after:hover {
+   opacity: 1;
+}
 @media screen and (max-width:768px) {
     .header-title {
         padding-top: 18%;

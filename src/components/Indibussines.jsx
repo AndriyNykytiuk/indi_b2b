@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import React from 'react'
+import React,{useState} from 'react'
 import '../css/indibussines.css'
 import userface from '../img/userFace.jpg'
 import kate from '../img/Kate.png'
@@ -16,6 +16,7 @@ import 'swiper/css/pagination';
 
 const Indibusines = () => {
     const isMobile=useMediaQuery({maxWidth:768})
+    const [isMessage, setIsMessage] = useState(false);
   return (
     <section>{ isMobile ?   
         (<section className='indibusines pt-[60px] pb-[60px]'>
@@ -150,8 +151,9 @@ const Indibusines = () => {
                                     </Swiper>
                                 </div>
                             </div>
-                            <div className='left-button'>
-                                        <a href="#">Контакт</a>
+                            <div className='left-button relative '>
+                                 {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}      
+                                  <a href="#">Контакт</a>
                             </div>
                     </div>
                 </div>
@@ -170,8 +172,11 @@ const Indibusines = () => {
                                 яка спрощує створення контенту та допомагає зосередитися на головному.
                             </h4>
                         </div>
-                        <div className='left-button'>
-                                <a href="#">Контакт</a>
+                        <div className='left-button relative '
+                            onMouseEnter={() => setIsMessage(true)}
+                            onMouseLeave={()=> setIsMessage(false)}>
+                             {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}      
+                                  <a href="#">Контакт</a>
                         </div>
                     </div>
                     <div className='indibusines-right right bg-[#F9FAFB] rounded-[30px] '>

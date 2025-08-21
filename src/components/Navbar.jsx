@@ -5,6 +5,11 @@ import '../css/navbar.css';
 import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
+  const [isMessage, setIsMessage] = useState(false);
+  const [isMain,setIsMain] = useState(false); 
+  const [isAbout,setIsAbout] = useState(false);
+  const [isService,setIsService] = useState(false);
+  const [isContact,setIsContact] = useState(false);
     const [isOpen,setIsOpen]=useState(false)
   const [visible, setVisible] = useState(false);
   const timeoutId = useRef(null);
@@ -61,12 +66,36 @@ const Navbar = () => {
           <img src={logoPict} alt="Logo" className="h-8" />
         </div>
         <ul  className={`navbar-list flex items-center gap-6 ${isOpen ? 'open' : ''}`}>
-          <li><a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Головна</a></li>
-          <li><a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Про нас</a></li>
-          <li><a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Послуги</a></li>
-          <li><a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Контакти</a></li>
+          <li className='relative'
+            onMouseEnter={() => setIsMain(true)}
+            onMouseLeave={() => setIsMain(false)}
+          >
+            {isMain && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
+            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Головна</a></li>
+          <li className='relative'
+            onMouseEnter={() => setIsAbout(true)}
+            onMouseLeave={() => setIsAbout(false)}
+          >
+            {isAbout && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
+            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Про нас</a></li>
+          <li className='relative'
+            onMouseEnter={() => setIsService(true)}
+            onMouseLeave={() => setIsService(false)}
+          >
+            {isService && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
+            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Послуги</a></li>
+          <li className='relative'
+            onMouseEnter={() => setIsContact(true)}
+            onMouseLeave={() => setIsContact(false)}
+          >
+            {isContact && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
+            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Контакти</a></li>
         </ul>
-        <div>
+        <div className="navbar-button relative"
+          onMouseEnter={() => setIsMessage(true)}
+          onMouseLeave={() => setIsMessage(false)}
+        >
+          {isMessage && <span className='absolute top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>} 
           <a href="#" className="button px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Приєднатися</a>
         </div>
       </div>

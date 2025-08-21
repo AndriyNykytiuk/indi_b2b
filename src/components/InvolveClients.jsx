@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../css/involveclients.css'
 import mobile from '../img/mobile.png'
 
 const InvolveClients = () => {
+  const [isMessage, setIsMessage] = useState(false);
   return (
     <section>
         <div className='involveclients-container mx-auto max-w-[1280px] p-[15px] md:p-[100px]'>
@@ -15,7 +16,10 @@ const InvolveClients = () => {
                          <div className='left-gridcontainer-subtitle'>
                             <h4>INDI — це новий спосіб взаємодії з клієнтами: без складних інтеграцій, з мінімальними витратами на рекламу та повним контролем</h4>
                         </div>
-                        <div className='left-gridcontainer-button flex'>
+                        <div className='left-gridcontainer-button flex relative'
+                            onMouseEnter={() => setIsMessage(true)}
+                            onMouseLeave={()=> setIsMessage(false)}>
+                            {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                             <a href="#">Запустити INDI</a>
                         </div>
                 </div>

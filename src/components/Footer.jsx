@@ -36,9 +36,9 @@ const Footer = () => {
                 <div className="footer-bottom bottom">
                     <ul className='bottom-list'>
                         <li><h4>© 2025 INDI. Всі права захищені.</h4></li>
-                        <li><a href="#">Політика конфіденційності</a></li>
-                        <li><a href="#">Умови обслуговування</a></li>
-                        <li><a href="#">Налаштування Cookies</a></li>
+                        <li><a data-name='в процесі наповнення' href="#">Політика конфіденційності</a></li>
+                        <li><a data-name='в процесі наповнення' href="#">Умови обслуговування</a></li>
+                        <li><a data-name='в процесі наповнення' href="#">Налаштування Cookies</a></li>
                     </ul>
                 </div>
 
