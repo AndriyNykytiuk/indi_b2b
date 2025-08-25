@@ -63,7 +63,7 @@ const Navbar = () => {
                 <span className={`second ${isOpen? 'open':'second'}`}></span>
                 <span className={`third ${isOpen? 'open':'third'}`}></span>
              </div>
-          <img src={logoPict} alt="Logo" className="h-8" />
+          <a href="#"> <img src={logoPict} alt="Logo" className="h-8" /></a>
         </div>
         <ul  className={`navbar-list flex items-center gap-6 ${isOpen ? 'open' : ''}`}>
           <li className='relative'

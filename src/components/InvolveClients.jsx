@@ -25,7 +25,7 @@ const InvolveClients = () => {
                 </div>
                 <div className='gridcontainer-right right-gridcontainer'>
                         <div className='right-gridcontainer-image'>
-                            <img src={mobile} alt="Image"/>
+                            <img className={isMessage?'scale-img':''} src={mobile} alt="Image"/>
                         </div>
                 </div>
             </div>

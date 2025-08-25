@@ -38,6 +38,19 @@ width: 100%;
 text-align: center;
  
 }
+.scale-img{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
 .left-gridcontainer-button:hover{
      box-shadow: 0 0 0 2px white, 0 0 0 4px #6138ff;
  background:#FFFF;
@@ -60,7 +73,7 @@ text-align: center;
     left: 0;
     width: 100%;
     height: 100%;
-  
+    transition: all 0.3s;
     object-fit: contain;
 }
 
