@@ -30,7 +30,8 @@ const HowToStart = () => {
                         <p>Створіть бізнес-акаунт за кілька хвилин — без договорів і зайвих дзвінків.</p>
                     </div>
                     <div className='card-item-button mt-auto relative'
-                            onMouseEnter={() => setIsRegistered(true)}
+                            onClick={(e) =>{ e.preventDefault()
+                                 setIsRegistered(true)}}
                             onMouseLeave={()=> setIsRegistered(false)}>
                             {isRegistered && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                         <a href="#">Детальніше</a>
@@ -45,7 +46,9 @@ const HowToStart = () => {
                         <p>Додайте акцію, знижку або подарунок — все інтуїтивно і просто.</p>
                     </div>
                         <div className='card-item-button mt-auto relative'
-                            onMouseEnter={() => setIsPorpose(true)}
+                            onClick={(e) => {
+                             e.preventDefault()
+                             setIsPorpose(true)}}
                             onMouseLeave={()=> setIsPorpose(false)}>
                             {isPorpose && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                         <a href="#">Детальніше</a>
@@ -60,7 +63,9 @@ const HowToStart = () => {
                         <p>Пропозиції одразу з’являються на мапі або в маркетплейсі — користувачі бачать, грають та активують.</p>
                     </div>
                         <div className='card-item-button relative'
-                            onMouseEnter={() => setIsMessage(true)}
+                            onClick={(e) => {
+                             e.preventDefault()
+                              setIsMessage(true)}}
                             onMouseLeave={()=> setIsMessage(false)}>
                             {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                         <a href="#">Детальніше</a>
@@ -68,7 +73,9 @@ const HowToStart = () => {
                 </div>
             </div>
             <div className='button relative'
-                            onMouseEnter={() => setIsActivate(true)}
+                            onClick={(e) => {
+                             e.preventDefault()
+                             setIsActivate(true)}}
                             onMouseLeave={()=> setIsActivate(false)}>
                             {isActivate && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                 <a href="#">Активувати INDI</a>

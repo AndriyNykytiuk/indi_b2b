@@ -67,32 +67,42 @@ const Navbar = () => {
         </div>
         <ul  className={`navbar-list flex items-center gap-6 ${isOpen ? 'open' : ''}`}>
           <li className='relative'
-            onMouseEnter={() => setIsMain(true)}
+            onClick={(e) => {
+              e.preventDefault()
+              setIsMain(true)}}
             onMouseLeave={() => setIsMain(false)}
           >
             {isMain && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
-            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Головна</a></li>
+            <a href="/" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Головна</a></li>
           <li className='relative'
-            onMouseEnter={() => setIsAbout(true)}
+            onClick={(e) => {
+              e.preventDefault()
+              setIsAbout(true)}}
             onMouseLeave={() => setIsAbout(false)}
           >
             {isAbout && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
-            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Про нас</a></li>
+            <a href="/" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Про нас</a></li>
           <li className='relative'
-            onMouseEnter={() => setIsService(true)}
+            onClick={(e) => {
+              e.preventDefault()
+              setIsService(true)}}
             onMouseLeave={() => setIsService(false)}
           >
             {isService && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
-            <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Послуги</a></li>
+            <a href="/" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Послуги</a></li>
           <li className='relative'
-            onMouseEnter={() => setIsContact(true)}
+            onClick={(e) => {
+              e.preventDefault()
+              setIsContact(true)}}
             onMouseLeave={() => setIsContact(false)}
           >
             {isContact && <span className='absolute top-7 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
             <a href="#" className="navbar-link px-4" onClick={()=>setIsOpen(false)}>Контакти</a></li>
         </ul>
         <div className="navbar-button relative"
-          onMouseEnter={() => setIsMessage(true)}
+          onClick={(e) => {
+              e.preventDefault()
+              setIsMessage(true)}}
           onMouseLeave={() => setIsMessage(false)}
         >
           {isMessage && <span className='absolute top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>} 

@@ -112,13 +112,17 @@ const Posibilities = () => {
                     </div>
                     <div className='posibilities-button flex gap-8 items-center '>
                         <div className='button relative'
-                        onMouseEnter={() => setIsMessage(true)}
+                        onClick={(e) => {
+                             e.preventDefault()
+                            setIsMessage(true)}}
                         onMouseLeave={() => setIsMessage(false)}>
                             {isMessage && <span className='absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                             <a href="#">Долучитись до INDI</a>
                         </div>
                         <div className='button-link relative'
-                        onMouseEnter={() => setIsMore(true)}
+                        onClick={(e) => {
+                             e.preventDefault()
+                             setIsMore(true)}}
                         onMouseLeave={() => setIsMore(false)}>
                             {isMore && <span className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2'>в процесі наповнення</span>}
                             <a href="#">Дізнатись більше  &gt; </a>
