@@ -74,7 +74,7 @@
    -o-border-radius: 10px;
    z-index: 100;
 }
-.social-list a.active:after,
+.social-list a.active::after,
 .top-list a.active::after,
 .bottom-list a.active::after{
     opacity: 1;
